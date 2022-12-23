@@ -1,0 +1,36 @@
+@import "../mixin.scss";
+.main {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.button {
+  @include regularText;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+  background: #118dff;
+  color: #ffffff;
+}
+
+.button:hover {
+  @include hover;
+}
+
+// .form__button-submit:disabled {
+//   background-color: rgb(180, 191, 191);
+//   cursor: default;
+// }
+
+// .form__button-submit:disabled:hover {
+//   opacity: 1;
+// }
+@media screen and (max-width: 540px) {
+  .button {
+    width: 100%;
+  }
+}
