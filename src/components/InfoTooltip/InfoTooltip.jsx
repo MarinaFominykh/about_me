@@ -1,4 +1,4 @@
-import "./InfoTooltip.css";
+import "./InfoTooltip.scss";
 function InfoTooltip({ message }) {
   return <span className="infotooltip">{message}</span>;
 }

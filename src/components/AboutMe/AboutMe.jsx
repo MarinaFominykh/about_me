@@ -8,7 +8,7 @@ function AboutMe({ onClick }) {
       <h1 className="about-me__title">Обо мне</h1>
       <div className="about-me__container">
         <div className="about-me__text-container">
-          <p className="about-me__name">Марина</p>
+          <p className="about-me__name">Марина Фоминых</p>
           <p className="about-me__intro">
             Владимир Ильич Ленин (настоящая фамилия Ульянов) родился 10 апреля
             (22 по новому стилю) 1870 г. в г. Симбирске (ныне Ульяновск) в семье

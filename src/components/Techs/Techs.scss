@@ -2,10 +2,9 @@
 .techs {
   width: 100%;
   min-height: 625px;
-  padding: 100px 70px 0 70px;
+  padding: 100px 70px 40px 70px;
   box-sizing: border-box;
   background-color: #f5f5f5;
-  margin-bottom: 40px;
 }
 
 .techs__title {
@@ -37,10 +36,10 @@
 }
 
 .techs__item {
+  @include regularText;
   width: 90px;
   background: #e8e8e8;
   border-radius: 10px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 60px;
   text-align: center;
@@ -50,23 +49,22 @@
   box-sizing: border-box;
 }
 .techs__skills {
-
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 0;
 }
 .techs__skill {
-    @include mediumText;
-    font-size: 20px;
-    line-height: 24px;
+  @include mediumText;
+  font-size: 14px;
+  line-height: 22px;
 }
 .techs__skill::marker {
   color: #727272;
- }
+}
 @media screen and (max-width: 960px) {
   .techs {
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 30px 50px;
     min-height: 567px;
   }
 
@@ -86,16 +84,11 @@
     line-height: 57px;
     height: 57px;
   }
-  .techs__skill {
-    @include mediumText;
-    font-size: 16px;
-    line-height: 20px;
-}
 }
 
 @media screen and (max-width: 540px) {
   .techs {
-    padding: 70px 18px 0 18px;
+    padding: 70px 18px 18px 18px;
     min-height: 651px;
     background-color: #ffffff;
   }
@@ -113,12 +106,6 @@
     margin-bottom: 24px;
   }
 
-  // .techs__description {
-  //     font-size: 11px;
-  //     line-height: 16px;
-  //     margin-bottom: 50px;
-  // }
-
   .techs__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -131,8 +118,4 @@
   .techs__item {
     width: auto;
   }
-  .techs__skill {
-    font-size: 16px;
-    line-height: 18px;
-}
 }
