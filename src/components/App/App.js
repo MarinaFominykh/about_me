@@ -1,17 +1,25 @@
 import "./App.scss";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AboutMe from "../AboutMe/AboutMe";
 import Techs from "../Techs/Techs";
 import Feedback from "../Feedback/Feedback";
+import Success from "../Success/Succes";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
-  const openPopup = () => {
-    setIsOpen(true);
+  const openFeedbackPopup = () => {
+    setIsFeedbackOpen(true);
   };
-  const closePopup = () => {
-    setIsOpen(false);
+  const closeFeedbackPopup = () => {
+    setIsFeedbackOpen(false);
+  };
+  const openSuccessPopup = () => {
+    setIsSuccessOpen(true);
+  };
+  const closeSuccessPopup = () => {
+    setIsSuccessOpen(false);
   };
 
   // обработчик по нажитию Esc
@@ -35,11 +43,17 @@ function App() {
 
   return (
     <main className="main">
-      <AboutMe onClick={openPopup} />
+      <AboutMe onClick={openFeedbackPopup} />
       <Techs />
       <Feedback
-        isOpen={isOpen}
-        onClose={closePopup}
+        isOpen={isFeedbackOpen}
+        onClose={closeFeedbackPopup}
+        useEscapePress={useEscapePress}
+        showSuccess={openSuccessPopup}
+      />
+      <Success
+        isOpen={isSuccessOpen}
+        onClose={closeSuccessPopup}
         useEscapePress={useEscapePress}
       />
     </main>

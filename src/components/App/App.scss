@@ -2,8 +2,8 @@
 .main {
   max-width: 1140px;
   margin: auto;
+  color: black
 }
-
 .button {
   @include regularText;
   font-size: 16px;
@@ -16,7 +16,6 @@
   background: #118dff;
   color: #ffffff;
 }
-
 .button:hover {
   @include hover;
 }

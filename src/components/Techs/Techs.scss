@@ -6,7 +6,6 @@
   box-sizing: border-box;
   background-color: #f5f5f5;
 }
-
 .techs__title {
   @include regularText;
   margin: 0 0 70px 0;
@@ -16,7 +15,6 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #000000;
 }
-
 .techs__description {
   @include regularText;
   text-align: center;
@@ -25,7 +23,6 @@
   line-height: 58px;
   letter-spacing: -0.04em;
 }
-
 .techs__list {
   list-style: none;
   display: flex;
@@ -34,7 +31,6 @@
   margin: 0 auto 70px auto;
   justify-content: center;
 }
-
 .techs__item {
   @include regularText;
   width: 90px;
@@ -67,17 +63,14 @@
     padding: 50px 50px 30px 50px;
     min-height: 567px;
   }
-
   .techs__term {
     margin: 0 0 22px 0;
   }
-
   .techs__description {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 50px;
   }
-
   .techs__item {
     width: 84px;
     font-size: 12px;
@@ -92,20 +85,17 @@
     min-height: 651px;
     background-color: #ffffff;
   }
-
   .techs__title {
     margin: 0 0 60px 0;
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 28px;
   }
-
   .techs__term {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 24px;
   }
-
   .techs__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -114,7 +104,6 @@
     box-sizing: border-box;
     gap: 10px;
   }
-
   .techs__item {
     width: auto;
   }

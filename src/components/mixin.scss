@@ -27,3 +27,17 @@ $font-family: 'Inter', Arial, Helvetica, sans-serif;
 @mixin hover{
   opacity: .6;
 }
+@mixin closeButton {
+  width: 24px;
+  height: 24px;
+  background: transparent url(../image/close.svg);
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  object-fit: contain;
+  object-position: center;
+}

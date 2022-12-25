@@ -1,7 +1,6 @@
 @import "../mixin.scss";
 .form {
   width: 430px;
-  min-height: 330px;
   background: #ffffff;
   padding: 24px;
   box-sizing: border-box;
@@ -10,6 +9,7 @@
   min-height: 300px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 .form__title {
   @include mediumText;
@@ -46,23 +46,28 @@
   border-radius: 8px;
   margin: 5px 0;
 }
-.form__input_tel:invalid {
-  outline: 1px solid red;
-}
 .form__close {
-  width: 24px;
-  height: 24px;
-  background: transparent url(../../image/close.svg);
-  position: absolute;
-  top: 28px;
-  right: 24px;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: 0.5s;
-  object-fit: contain;
-  object-position: center;
+@include closeButton
 }
 .form__close:hover {
   @include hover;
+}
+.form__message-container {
+  min-height: 32px;
+}
+@media screen and (max-width: 540px) {
+  .form {
+    max-width: 320px;
+    padding: 20px;
+    gap: 16px;
+  }
+  .form__title {
+    max-width: 250px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .form__close {
+    top: 22px;
+    right: 22px;
+  }
 }

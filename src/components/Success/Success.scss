@@ -1,0 +1,44 @@
+@import "../mixin.scss";
+.success {
+  width: 430px;
+  background: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  gap: 32px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.success__close {
+  @include closeButton;
+}
+.success__img {
+  width: 120px;
+  height: 120px;
+  margin-top: 36px;
+}
+.success__message {
+  @include extraBoldText;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 540px) {
+  .success {
+    max-width: 320px;
+    padding: 20px;
+    gap: 40px;
+  }
+  .success__message {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .success__close {
+    top: 22px;
+    right: 22px;
+  }
+}
