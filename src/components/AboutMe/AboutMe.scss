@@ -36,7 +36,7 @@
 }
 .about-me__intro {
   @include regularText;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   mix-blend-mode: normal;
   margin: 0 0 81px 0;
@@ -111,9 +111,7 @@
     margin: 0 0 4px 0;
   }
   .about-me__intro {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0 0 71px 0;
+     margin: 0 0 71px 0;
   }
   .about-me__photo-wrapper {
     max-width: 255px;
@@ -139,8 +137,8 @@
     line-height: 36px;
   }
   .about-me__intro {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 0 0 20px 0;
   }
   .about-me__site-container {
